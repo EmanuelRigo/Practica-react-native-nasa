@@ -1,10 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import { View, Text } from "react-native";
+import { PostImage } from "../../../types";
 
-const TodaysImage = () => {
-  <View>
-    <Text>Today Image</Text>
-  </View>;
+
+
+const TodaysImage: FC<PostImage> = () => {
+  return (
+    <View>
+      <Text>Todays Image</Text>
+    </View>
+  )
 };
 
 export default TodaysImage;
